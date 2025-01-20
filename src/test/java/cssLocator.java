@@ -12,11 +12,31 @@ public class cssLocator {
 		driver.manage().window().maximize();
 		
 		
-		//by Tag ID
-		//both are correct
-		driver.findElement(By.cssSelector("input#small-searchterms")).sendKeys("T-shirt");
+		//by Tag ID  tag#id
+		//both are correct                   tag#id
+		//driver.findElement(By.cssSelector("input#small-searchterms")).sendKeys("T-shirt");
 		//driver.findElement(By.cssSelector("#small-searchterms")).sendKeys("T-shirt");
 
+		
+		//by class 
+		//both are correct                   tag.class
+		//driver.findElement(By.cssSelector("input.search-box-text")).sendKeys("T-shirt");
+		//driver.findElement(By.cssSelector(".search-box-text")).sendKeys("T-shirt");
+
+		
+		//tag attribute                      tag[attribute="value"]
+		//driver.findElement(By.cssSelector("input[placeholder='Search store']")).sendKeys("T-shirt");
+		//driver.findElement(By.cssSelector("input[placeholder=\"Search store\"]")).sendKeys("T-shirt");
+		//driver.findElement(By.cssSelector("[placeholder='Search store']")).sendKeys("T-shirt");
+
+		
+		//by tag class attribute           tag.class[attribute='value']
+		//driver.findElement(By.cssSelector("input.search-box-text[name=\"q\"]")).sendKeys("T-shirt");
+		driver.findElement(By.cssSelector(".search-box-text[name=\"q\"]")).sendKeys("T-shirt");
+
+		
+		
+		
 	}
 
 }
