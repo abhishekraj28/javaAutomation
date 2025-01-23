@@ -18,11 +18,31 @@ public class navigationalCommands {
 		
 		
 		//Using navigate.to() method we can pass both string and object
-		//driver.navigate().to("https://demo.nopcommerce.com");
+		driver.navigate().to("https://demo.nopcommerce.com");
+		driver.navigate().to("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		
+		/*Using object
 		URL u=new URL("https://demo.nopcommerce.com/");
 		driver.navigate().to(u);
-
+		*/
+		
+		
+		//Using navigate().back()
+		driver.navigate().back();
+		System.out.println(driver.getCurrentUrl());
+		
+		//Using navigate().forward()
+		driver.navigate().forward();
+		System.out.println(driver.getCurrentUrl());
+		
+		//Using navigate().refresh()
+		driver.navigate().refresh();
+		
+		
+		
+		
+		
+		
 	}
 
 }
