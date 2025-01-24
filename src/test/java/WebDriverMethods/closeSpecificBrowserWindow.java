@@ -13,11 +13,9 @@ public class closeSpecificBrowserWindow {
 	public static void main(String[] args) throws InterruptedException {
 		
 		WebDriver d=new ChromeDriver();
-		//d.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		d.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		WebDriverWait d1=new WebDriverWait(d, Duration.ofSeconds(10));
 
-		
-		
 		
 		d.get("https://www.instagram.com/");
 		
