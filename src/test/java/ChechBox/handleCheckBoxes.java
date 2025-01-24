@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class handleCheckBoxes {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		
 		WebDriver d=new ChromeDriver();
 		
@@ -38,9 +38,33 @@ public class handleCheckBoxes {
 		}
 		*/
 		
+		/*
 		//3- select last three checkboxes
 		for(int i=4;i<el.size();i++) {
 			el.get(i).click();
+		}
+		*/
+		
+		
+		/*
+		//4- select first three checkboxes
+		for(int i=0;i<3;i++) {
+			el.get(i).click();
+		}
+		*/
+		
+		
+		//5- Unselect chechboxesif they are selected
+		for(int i=0;i<3;i++) {
+			el.get(i).click();
+		}
+		
+		Thread.sleep(5000);
+		
+		for(WebElement e:el) {
+			if(e.isSelected()) {
+				e.click();
+			}
 		}
 		
 	}
