@@ -67,6 +67,8 @@ public class handleCheckBoxes {
 			}
 		}
 		
+		d.quit();
+		
 	}
 
 }
