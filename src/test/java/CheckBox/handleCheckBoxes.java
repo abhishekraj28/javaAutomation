@@ -1,4 +1,4 @@
-package ChechBox;
+package CheckBox;
 
 import java.util.List;
 
