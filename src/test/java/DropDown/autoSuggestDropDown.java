@@ -27,12 +27,12 @@ public class autoSuggestDropDown {
 		for(WebElement el:l) {
 			System.out.println(el.getText());
 			
-			/*
+			
 			if(el.getText().equals("selenium")) {
 				el.click();
 			
 			}
-			*/
+			
 		}
 		
 		/*
