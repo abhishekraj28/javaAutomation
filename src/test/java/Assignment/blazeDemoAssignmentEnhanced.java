@@ -1,6 +1,5 @@
 package Assignment;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,11 +9,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
+public class blazeDemoAssignmentEnhanced {
 
-
-public class BlazeDemoAssignmentEmhanced {
-
-    public static void main(String[] args) {
+	
+	public static void main(String[] args) {
         WebDriver driver = new ChromeDriver();
 
         try {
@@ -90,4 +88,3 @@ public class BlazeDemoAssignmentEmhanced {
         return prices;
     }
 }
-

@@ -15,8 +15,8 @@ public class enableExtensionInAutomation {
 		
 		
 		//Enable selectorhub extension 
-		File f=new File("C:\\Users\\rajab\\Downloads\\SelectorsHub-XPath-Helper-Chrome-Web-Store.crx");
-		o.addExtensions(f);
+		//File f=new File("C:\\Users\\rajab\\Downloads\\SelectorsHub-XPath-Helper-Chrome-Web-Store.crx");
+		o.addExtensions(new File("C:\\Users\\rajab\\Downloads\\SelectorsHub-XPath-Helper-Chrome-Web-Store.crx"));
 		
 		
 		//Enable  extensionublockorigin 
