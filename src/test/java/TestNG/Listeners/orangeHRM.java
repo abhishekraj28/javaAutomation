@@ -1,37 +1,29 @@
-package TestNG.Parameterization;
+package TestNG.Listeners;
 
 import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
+import org.testng.annotations.Test;
 
-public class paramTest {
 
-	WebDriver d;
+//Trigger listener class apart from XML file
+//@Listeners(TestNG.Listeners.listeners.class)
+public class orangeHRM {
+
+WebDriver d;
 	
 	@BeforeClass
-	@Parameters({"browser","URL"})
-	void setup(String br, String URL) throws InterruptedException{
+	void setup() throws InterruptedException{
 		
-		switch(br) {
-		
-			case "chrome":d=new ChromeDriver();
-			break;
-			case "edge":d=new EdgeDriver();
-			break;
+		d=new ChromeDriver();
 			
-			default:System.out.println("Invalid browser");
-			return;
-			
-		}
-		
 		d.manage().window().maximize();
 		d.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		d.get(URL);
+		d.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		Thread.sleep(3000);
 	}
 	
@@ -43,23 +35,20 @@ public class paramTest {
 		Assert.assertEquals(status,true);
 	}
 	
+
+	@Test(priority=2)
+	void testUrl() {
+		Assert.assertEquals(d.getCurrentUrl(), "https://opensource-demo.orangehrmlive.com/web/index.php/auth/");
+	}
 	
-	@Test(priority=3)
+	@Test(priority=3, dependsOnMethods={"testUrl"})
 	void testTitle() {
 		Assert.assertEquals(d.getTitle(),"OrangeHRM");
 	}
 	
 	
-	@Test(priority=3)
-	void testUrl() {
-		Assert.assertEquals(d.getCurrentUrl(), "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-	}
-	
 	@AfterClass
 	void teardown() {
 		d.quit();
 	}
-	
-	
 }
-
