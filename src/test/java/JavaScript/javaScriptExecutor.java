@@ -24,7 +24,7 @@ public class javaScriptExecutor {
 		WebElement radio=d.findElement(By.xpath("//input[@id='male']"));
 		
 		//perform send keys option using javaexecutor
-		js.executeScript("arguments[0].setAttribute('Value', 'John')", name);
+		js.executeScript("arguments[0].setAttribute('Value', 'vick')", name);
 		
 		//perform click action
 		js.executeScript("arguments[0].click()",radio);

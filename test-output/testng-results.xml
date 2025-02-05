@@ -1,43 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-04T10:30:16 IST" name="Suite" finished-at="2025-02-04T10:30:32 IST" duration-ms="16075">
+  <suite started-at="2025-02-05T20:43:59 IST" name="Suite" finished-at="2025-02-05T20:44:10 IST" duration-ms="11673">
     <groups>
     </groups>
-    <test started-at="2025-02-04T10:30:16 IST" name="Test" finished-at="2025-02-04T10:30:32 IST" duration-ms="16075">
-      <class name="TestNG.firstTestCase">
-        <test-method signature="login()[pri:0, instance:TestNG.firstTestCase@49139829]" started-at="2025-02-04T10:30:32 IST" name="login" finished-at="2025-02-04T10:30:32 IST" duration-ms="1" status="PASS">
+    <test started-at="2025-02-05T20:43:59 IST" name="Test" finished-at="2025-02-05T20:44:10 IST" duration-ms="11673">
+      <class name="TestNG.Parameterization.paramTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TestNG.Parameterization.paramTest@5c6648b0]" started-at="2025-02-05T20:43:59 IST" name="setup" finished-at="2025-02-05T20:44:09 IST" duration-ms="10308" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="logout()[pri:0, instance:TestNG.firstTestCase@49139829]" started-at="2025-02-04T10:30:32 IST" name="logout" finished-at="2025-02-04T10:30:32 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="testLogo()[pri:1, instance:TestNG.Parameterization.paramTest@5c6648b0]" started-at="2025-02-05T20:44:09 IST" name="testLogo" finished-at="2025-02-05T20:44:09 IST" duration-ms="46" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method signature="openApp()[pri:0, instance:TestNG.firstTestCase@49139829]" started-at="2025-02-04T10:30:32 IST" name="openApp" finished-at="2025-02-04T10:30:32 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- testLogo -->
+        <test-method signature="testTitle()[pri:3, instance:TestNG.Parameterization.paramTest@5c6648b0]" started-at="2025-02-05T20:44:09 IST" name="testTitle" finished-at="2025-02-05T20:44:09 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openApp -->
-      </class> <!-- TestNG.firstTestCase -->
-      <class name="TestNG.orangeHRMTest">
-        <test-method signature="openApp()[pri:0, instance:TestNG.orangeHRMTest@7f3b84b8]" started-at="2025-02-04T10:30:16 IST" name="openApp" finished-at="2025-02-04T10:30:28 IST" duration-ms="12626" status="PASS">
+        </test-method> <!-- testTitle -->
+        <test-method signature="testUrl()[pri:3, instance:TestNG.Parameterization.paramTest@5c6648b0]" started-at="2025-02-05T20:44:09 IST" name="testUrl" finished-at="2025-02-05T20:44:09 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openApp -->
-        <test-method signature="logoDis()[pri:1, instance:TestNG.orangeHRMTest@7f3b84b8]" started-at="2025-02-04T10:30:28 IST" name="logoDis" finished-at="2025-02-04T10:30:31 IST" duration-ms="3070" status="PASS">
+        </test-method> <!-- testUrl -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestNG.Parameterization.paramTest@5c6648b0]" started-at="2025-02-05T20:44:09 IST" name="teardown" finished-at="2025-02-05T20:44:10 IST" duration-ms="1270" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logoDis -->
-        <test-method signature="login()[pri:2, instance:TestNG.orangeHRMTest@7f3b84b8]" started-at="2025-02-04T10:30:31 IST" name="login" finished-at="2025-02-04T10:30:31 IST" duration-ms="175" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="closeApp()[pri:3, instance:TestNG.orangeHRMTest@7f3b84b8]" started-at="2025-02-04T10:30:31 IST" name="closeApp" finished-at="2025-02-04T10:30:32 IST" duration-ms="158" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
-      </class> <!-- TestNG.orangeHRMTest -->
+        </test-method> <!-- teardown -->
+      </class> <!-- TestNG.Parameterization.paramTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
